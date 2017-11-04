@@ -1,8 +1,6 @@
 [ ![Download](https://api.bintray.com/packages/bincrafters/public-conan/rxcpp%3Abincrafters/images/download.svg?version=4.0.0%3Astable) ](https://bintray.com/bincrafters/public-conan/rxcpp%3Abincrafters/4.0.0%3Astable/link)
-[![Build Status](https://travis-ci.org/bincrafters/conan-rxcpp.svg?branch=stable%2F4.0.0)](https://travis-ci.org/bincrafters/conan-rxcpp)
-[![Build status](https://ci.appveyor.com/api/projects/status/a5snyovachh6e8nh?svg=true)](https://ci.appveyor.com/project/BinCrafters/conan-rxcpp)
 
-Brief statement describing rxcpp
+Library for composing operations on streams of asynchronous events.
 
 [Conan.io](https://conan.io) package for [rxcpp](https://github.com/Reactive-Extensions/rxcpp) project
 
@@ -49,4 +47,4 @@ The following command both runs all the steps of the conan file, and publishes t
     $ conan upload rxcpp/4.0.0@bincrafters/stable --all -r bincrafters
 
 ### License
-[LICENSE_TYPE](https://github.com/someauthor/rxcpp/blob/master/LICENSE)
+[LICENSE_TYPE](LICENSE)
