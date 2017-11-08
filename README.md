@@ -1,8 +1,8 @@
 [ ![Download](https://api.bintray.com/packages/bincrafters/public-conan/rxcpp%3Abincrafters/images/download.svg?version=4.0.0%3Astable) ](https://bintray.com/bincrafters/public-conan/rxcpp%3Abincrafters/4.0.0%3Astable/link)
 
-Library for composing operations on streams of asynchronous events.
-
 [Conan.io](https://conan.io) package for [rxcpp](https://github.com/Reactive-Extensions/rxcpp) project
+
+Library for composing operations on streams of asynchronous events.
 
 The packages generated with this **conanfile** can be found in [Bintray](https://bintray.com/bincrafters/public-conan/rxcpp%3Abincrafters).
 
@@ -26,7 +26,7 @@ Complete the installation of requirements for your project running:
 
     $ mkdir build && cd build && conan install ..
 
-Note: It is recommended that you run conan install from a build directory and not the root of the project directory.  This is because conan generates *conanbuildinfo* files specific to a single build configuration which by default comes from an autodetected default profile located in ~/.conan/profiles/default .  If you pass different build configuration options to conan install, it will generate different *conanbuildinfo* files.  Thus, they should not be added to the root of the project, nor committed to git.
+**Note:** It is recommended that you run conan install from a build directory and not the root of the project directory.  This is because conan generates *conanbuildinfo* files specific to a single build configuration which by default comes from an autodetected default profile located in ~/.conan/profiles/default .  If you pass different build configuration options to conan install, it will generate different *conanbuildinfo* files.  Thus, they should not be added to the root of the project, nor committed to git.
 
 ## For Packagers: Publish this Package
 
@@ -47,4 +47,4 @@ The following command both runs all the steps of the conan file, and publishes t
     $ conan upload rxcpp/4.0.0@bincrafters/stable --all -r bincrafters
 
 ### License
-[LICENSE_TYPE](LICENSE)
+[Apache License 2.0](LICENSE)
