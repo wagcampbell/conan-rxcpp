@@ -4,17 +4,15 @@
 from conans import ConanFile, tools
 import os
 
+
 class RxcppConan(ConanFile):
     name = "rxcpp"
     version = "4.0.0"
-    settings = "os", "arch", "compiler", "build_type"
-    options = {"shared": [True, False]}
-    default_options = "shared=False"
     url = "https://github.com/bincrafters/conan-rxcpp"
     description = "Library for composing operations on streams of asynchronous events."
     license = "https://github.com/Reactive-Extensions/RxCpp/blob/master/license.md"
-    root = name + "-" + version
-    
+    root = "RxCpp-" + version
+
     def source(self):
         source_url = "https://github.com/Reactive-Extensions/RxCpp"
         tools.get("{0}/archive/v{1}.tar.gz".format(source_url, self.version))
@@ -25,4 +23,3 @@ class RxcppConan(ConanFile):
 
     def package_id(self):
         self.info.header_only()
-        
