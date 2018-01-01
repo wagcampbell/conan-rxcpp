@@ -10,7 +10,8 @@ class RxcppConan(ConanFile):
     version = "4.0.0"
     url = "https://github.com/bincrafters/conan-rxcpp"
     description = "Library for composing operations on streams of asynchronous events."
-    license = "https://github.com/Reactive-Extensions/RxCpp/blob/master/license.md"
+    license = "Apache-2.0"
+    exports = ["LICENSE.md"]
     root = "RxCpp-" + version
 
     def source(self):
