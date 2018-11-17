@@ -6,7 +6,7 @@ from conans import ConanFile, tools
 
 class RxcppConan(ConanFile):
     name = "rxcpp"
-    version = "4.1.0"
+    version = "4.0.0"
     url = "https://github.com/bincrafters/conan-rxcpp"
     homepage = "https://github.com/ReactiveX/RxCpp"
     author = "Bincrafters <bincrafters@gmail.com>"
