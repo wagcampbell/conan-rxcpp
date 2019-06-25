@@ -6,7 +6,7 @@ from conans import ConanFile, tools
 
 class RxcppConan(ConanFile):
     name = "rxcpp"
-    version = "4.1.0"
+    version = "4.1.0-f38fb8e"
     url = "https://github.com/bincrafters/conan-rxcpp"
     homepage = "https://github.com/ReactiveX/RxCpp"
     author = "Bincrafters <bincrafters@gmail.com>"
@@ -17,9 +17,10 @@ class RxcppConan(ConanFile):
     _source_subfolder = "source_subfolder"
 
     def source(self):
-        source_url = "https://github.com/Reactive-Extensions/RxCpp"
-        tools.get("{0}/archive/v{1}.tar.gz".format(source_url, self.version))
-        extracted_folder = "RxCpp-" + self.version
+        source_url = "https://github.com/ReactiveX/RxCpp"
+        revision = "f38fb8e3c30b01b07c57e08039b2942f1685224d"
+        tools.get("{0}/archive/{1}.tar.gz".format(source_url, revision))
+        extracted_folder = "RxCpp-" + revision
         os.rename(extracted_folder, self._source_subfolder)
 
     def package(self):
